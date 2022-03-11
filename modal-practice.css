@@ -1,0 +1,48 @@
+:root{
+    --modal-width: 300px;
+    --model-height: 200px
+}
+  .modal {
+    /* display: none;  */
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-run {
+    border: blue 1px solid;
+    border-radius: 10px;
+    width: attr(kahihi);
+    
+    height: 200px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .modal-run::after{
+    content:attr(kahihi);
+    background-color: green;
+  }
+ 
+  .modal-run::before{
+    content:"berfore";
+    background-color: pink;
+  }
+
+  .view {
+    display: none;
+  }
+
+  .my-button-2 {
+    float: right;
+    background-color: blue;
+    font-weight: bold;
+  }
